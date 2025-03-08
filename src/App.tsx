@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Profile from "./pages/Profile";
 
 // Create basic placeholder pages for routes that are being linked to but don't exist yet
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/map" element={<MapPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/king/:id" element={<KingDetailPage />} />
+          <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
