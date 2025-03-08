@@ -134,9 +134,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-ivory/10 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-ivory/50 text-sm">
-            © {new Date().getFullYear()} Royal Nepal. All rights reserved.
-          </p>
+          <div className="text-ivory/50 text-sm">
+            <p className="mb-1">© {new Date().getFullYear()} Royal Nepal. All rights reserved.</p>
+            <p>Created by Sudarshan Sapkota</p>
+          </div>
           <div className="mt-4 md:mt-0 flex items-center space-x-6">
             <a href="#" className="text-ivory/50 hover:text-ivory text-sm">
               Privacy Policy
