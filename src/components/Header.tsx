@@ -39,11 +39,12 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link 
           to="/" 
-          className="flex items-center"
+          className="flex items-center flex-col md:flex-row"
         >
           <div className="text-royal font-bold text-3xl font-serif tracking-tight">
             <span className="text-ivory">Royal</span> Nepal
           </div>
+          <span className="text-ivory/70 text-xs md:ml-2 mt-1 md:mt-0">by Sudarshan Sapkota</span>
         </Link>
 
         {/* Desktop Navigation */}
