@@ -1,150 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudarshan Sapkota - Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            background-color: #0A192F;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        nav {
-            background-color: #0A192F;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #64FFDA;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section.hero {
-            background: linear-gradient(to right, #0A192F, #1C2C40);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .hero img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 3px solid #64FFDA;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.2em;
-        }
-
-        .hero p {
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-
-        .btn {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #64FFDA;
-            color: #0A192F;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #52d1b5;
-        }
-
-        footer {
-            background-color: #0A192F;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 60px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudarshan Sapkota - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <div class="container header-container">
+      <img src="assets/profile.jpg" alt="Sudarshan Sapkota" class="profile-img"/>
+      <div class="intro">
+        <h1>Sudarshan Sapkota</h1>
+        <p>Computer Systems Technician | IT Professional</p>
+      </div>
+    </div>
+  </header>
 
-<header>
-    <h1>Welcome to My Portfolio</h1>
-</header>
+  <main class="container">
+    <!-- Projects Section -->
+    <section class="section">
+      <h2>My Projects</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Project 1A</h3>
+          <p>Initial phase of IT infrastructure documentation.</p>
+          <a href="documents/project1a.pdf" target="_blank" class="btn">View PDF</a>
+        </div>
+        <div class="card">
+          <h3>Project 1B</h3>
+          <p>Configuration and deployment details.</p>
+          <a href="documents/project1b.pdf" target="_blank" class="btn">View PDF</a>
+        </div>
+        <div class="card">
+          <h3>Project 1C</h3>
+          <p>Final implementation and results.</p>
+          <a href="documents/project1c.pdf" target="_blank" class="btn">View PDF</a>
+        </div>
+        <div class="card">
+          <h3>Project 2</h3>
+          <p>Azure-based VPN & File Share deployment.</p>
+          <a href="documents/project2.pdf" target="_blank" class="btn">View PDF</a>
+        </div>
+        <div class="card">
+          <h3>Project 3</h3>
+          <p>Kubernetes deployment with TML dashboard.</p>
+          <a href="documents/project3.pdf" target="_blank" class="btn">View PDF</a>
+        </div>
+      </div>
+    </section>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- Documents Section -->
+    <section class="section">
+      <h2>My Documents</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Resume</h3>
+          <p>My latest professional resume in PDF format.</p>
+          <a href="documents/Sudarshan_Resume.pdf" target="_blank" class="btn">Download</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="hero">
-    <img src="assets/profile.jpg" alt="Sudarshan Sapkota">
-    <h1>Hello, I'm <span id="typed-text"></span></h1>
-    <p>I’m passionate about networks, cloud computing, and cybersecurity.</p>
-    <a class="btn" href="projects.html">See My Work</a>
-</section>
-
-<footer>
-    &copy; 2025 Sudarshan Sapkota
-</footer>
-
-<script>
-    const words = ["Sudarshan Sapkota", "a Computer Technician", "a Cloud Enthusiast", "a Future SysAdmin"];
-    let i = 0, j = 0, isDeleting = false;
-
-    function type() {
-        const typedText = document.getElementById("typed-text");
-        const current = words[i];
-        
-        if (isDeleting) {
-            typedText.textContent = current.substring(0, j--);
-            if (j < 0) {
-                isDeleting = false;
-                i = (i + 1) % words.length;
-            }
-        } else {
-            typedText.textContent = current.substring(0, j++);
-            if (j > current.length) {
-                isDeleting = true;
-            }
-        }
-
-        const speed = isDeleting ? 50 : 100;
-        setTimeout(type, speed);
-    }
-
-    type();
-</script>
-
+  <footer>
+    <p>&copy; 2025 Sudarshan Sapkota | <a href="mailto:sudarshanofficial86@gmail.com">sudarshanofficial86@gmail.com</a> | 
+    <a href="https://www.linkedin.com/in/sudarshan683" target="_blank">LinkedIn</a></p>
+  </footer>
 </body>
 </html>
-
