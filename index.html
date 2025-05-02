@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudarshan Sapkota | Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudarshan Sapkota - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header with profile image and name -->
-    <header>
-        <img src="assets/profile.jpg" alt="Sudarshan Sapkota" class="profile-pic">
-        <h1>Sudarshan Sapkota</h1>
-        <p class="tagline">Web Developer &amp; Designer from Nepal</p>
-    </header>
+  <header>
+    <div class="nav-container">
+      <h1>Sudarshan Sapkota</h1>
+      <button id="mode-toggle">Toggle Mode</button>
+    </div>
+  </header>
 
-    <!-- Main content area -->
-    <main>
-        <!-- Introduction Section -->
-        <section id="intro">
-            <h2>Introduction</h2>
-            <p>Hello! I'm Sudarshan Sapkota, a passionate web developer from Nepal. I specialize in creating modern, responsive websites with a clean design. My goal is to build user-friendly applications that incorporate my Nepali heritage and love for technology.</p>
-        </section>
+  <section class="intro">
+    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" />
+    <h2><span class="flashing">IT Professional | Based in Toronto, Canada</span></h2>
+    <p>
+      I'm a Computer Systems Technician graduate from Seneca College. I've worked on real-world
+      projects involving networking, cloud platforms, and cybersecurity.
+    </p>
+  </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-                <li>Python</li>
-            </ul>
-        </section>
+  <section class="skills">
+    <h2>Skills Gained</h2>
+    <ul>
+      <li>Cloud Computing (Azure, AWS)</li>
+      <li>Networking, VPNs, File Shares</li>
+      <li>Cybersecurity & Forensics (Splunk, Wireshark, FTK Imager)</li>
+      <li>Linux & Bash Automation</li>
+      <li>Windows Server & Domain Controllers</li>
+      <li>SQL, PostgreSQL, Docker & Kubernetes</li>
+    </ul>
+  </section>
 
-        <!-- Projects Section (placeholders for future PDFs) -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>My project documents (resumes, portfolios, etc.) will appear here. Examples of downloadable PDFs:</p>
-            <ul class="project-list">
-                <li><a href="documents/project1.pdf" class="project-link">Project 1 (coming soon)</a></li>
-                <li><a href="documents/project2.pdf" class="project-link">Project 2 (coming soon)</a></li>
-            </ul>
-        </section>
-    </main>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <a href="documents/project1a.pdf" target="_blank">Project 1A</a>
+      <a href="documents/project1b.pdf" target="_blank">Project 1B</a>
+      <a href="documents/project1c.pdf" target="_blank">Project 1C</a>
+      <a href="documents/project2.pdf" target="_blank">Project 2</a>
+      <a href="documents/project3.pdf" target="_blank">Project 3</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Sudarshan Sapkota. All rights reserved.</p>
-    </footer>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sudarshanofficial86@gmail.com">sudarshanofficial86@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sudarshan683" target="_blank">linkedin.com/in/sudarshan683</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sudarshan Sapkota</p>
+  </footer>
 </body>
 </html>
