@@ -4,29 +4,45 @@
     <meta charset="UTF-8">
     <title>Profile | Sudarshan</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <h2>Sudarshan</h2>
-    <div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
+        <a href="profile.html" class="active">Profile</a>
         <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
-<div class="container">    <img src="assets/profile.jpg" alt="Sudarshan Sapkota" style="width: 180px; height: 180px; border-radius: 50%; border: 3px solid #64FFDA; margin-bottom: 1rem;">
-    <h2>About Me</h2>
-    <p>Hi! I'm Sudarshan, a Computer Systems Technician from Seneca College. I'm interested in IT administration, cloud platforms (Azure & AWS), and cybersecurity.</p>
-</div>
+<main class="container">
+    <section class="profile-header">
+        <img src="assets/profile.jpg" alt="Sudarshan Sapkota" class="profile-image">
+        <div class="intro-text">
+            <h1>Hi, I'm Sudarshan Sapkota</h1>
+            <p>A passionate <strong>Computer Systems Technician</strong> based in Canada with expertise in cloud technologies, networking, and system administration. Graduate of <strong>Seneca College</strong>.</p>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills & Expertise</h2>
+        <ul class="skills-list">
+            <li>Network Administration</li>
+            <li>System Administration (Linux & Windows)</li>
+            <li>Cloud Computing (AWS & Azure)</li>
+            <li>Cybersecurity</li>
+            <li>Bash & Python Scripting</li>
+            <li>VMware & Virtualization</li>
+        </ul>
+    </section>
+</main>
 
 <footer>
-    &copy; 2025 Sudarshan Sapkota
+    &copy; 2025 Sudarshan Sapkota | <a href="mailto:sudarshanofficial86@gmail.com">Email Me</a>
 </footer>
 
 </body>
 </html>
- 
