@@ -2,46 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile | Sudarshan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Sudarshan Sapkota</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <h2>Sudarshan</h2>
-    <div class="nav-links">
+    <div>
         <a href="index.html">Home</a>
-        <a href="profile.html" class="active">Profile</a>
+        <a href="profile.html">Profile</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
-<main class="container">
-    <section class="profile-header">
-        <img src="assets/profile.jpg" alt="Sudarshan Sapkota" class="profile-image">
-        <div class="intro-text">
-            <h1>Hi, I'm Sudarshan Sapkota</h1>
-            <p>A passionate <strong>Computer Systems Technician</strong> based in Canada with expertise in cloud technologies, networking, and system administration. Graduate of <strong>Seneca College</strong>.</p>
+<div class="container">
+    <!-- Profile Header Section -->
+    <div class="profile-header">
+        <img src="assets/profile.jpg" alt="Sudarshan Sapkota" class="profile-img">
+        <div>
+            <h2>Hello, I'm <span class="highlight">Sudarshan Sapkota</span></h2>
+            <p>A passionate <strong>Computer Systems Technician</strong> based in Toronto, Canada.</p>
+            <p>Currently studying at <strong>Seneca Polytechnic</strong>, with a focus on <em>cloud computing, cybersecurity, and system administration</em>.</p>
+            <a href="documents/Sudarshan_Resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+    </div>
+
+    <!-- Core Competencies Section -->
+    <section>
+        <h3>Core Competencies</h3>
+        <ul class="skills-list">
+            <li>Cloud Platforms: <strong>Azure & AWS</strong></li>
+            <li>Systems Administration: <strong>Linux & Windows</strong></li>
+            <li>Networking & VPNs</li>
+            <li>Cybersecurity & <strong>Splunk</strong></li>
+            <li><strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Git</strong></li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+        <h3>Education</h3>
+        <p><strong>Diploma in Computer Systems Technician</strong> – Seneca Polytechnic, Toronto</p>
+        <p><em>Expected Completion:</em> April 2025</p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section>
+        <h3>Certifications</h3>
+        <ul class="certification-list">
+            <li><strong>Food Safety Handling</strong> (2023) – Canadian Institute of Food Safety</li>
+            <li><strong>CompTIA Security+</strong> (Expected 2025)</li>
+            <li><strong>AWS Certified Solutions Architect</strong> (2024)</li>
+        </ul>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section>
+        <h3>Professional Experience</h3>
+        <div class="experience">
+            <h4>Cook – Absolute Comedy Club (Toronto, Canada)</h4>
+            <p><em>Sept 2023 – Present</em></p>
+            <p>Providing exceptional cooking services in a fast-paced environment, supporting the kitchen team, and maintaining high standards of hygiene and food safety.</p>
+        </div>
+        <div class="experience">
+            <h4>Kitchen Helper – Trisara (Kathmandu, Nepal)</h4>
+            <p><em>Jan 2020 – Mar 2023</em></p>
+            <p>Assisted in daily kitchen operations, prepared ingredients, and maintained cleanliness. Worked under pressure to meet the high demands of a busy kitchen.</p>
         </div>
     </section>
 
-    <section class="skills-section">
-        <h2>Skills & Expertise</h2>
-        <ul class="skills-list">
-            <li>Network Administration</li>
-            <li>System Administration (Linux & Windows)</li>
-            <li>Cloud Computing (AWS & Azure)</li>
-            <li>Cybersecurity</li>
-            <li>Bash & Python Scripting</li>
-            <li>VMware & Virtualization</li>
+    <!-- Projects Section -->
+    <section>
+        <h3>Featured Projects</h3>
+        <div class="project-list">
+            <div class="project-card">
+                <h4><a href="projects.html">MST400 Azure Project</a></h4>
+                <p>Created an end-to-end infrastructure with virtual machines, domain controllers, and peered networks in Azure.</p>
+            </div>
+            <div class="project-card">
+                <h4><a href="projects.html">CSP450 Kubernetes & Docker</a></h4>
+                <p>Worked with Docker containers and Kubernetes, modifying real-time dashboards for TML processing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h3>Contact Me</h3>
+        <p>If you'd like to connect, feel free to reach out via email or LinkedIn:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:sudarshanofficial86@gmail.com">sudarshanofficial86@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sudarshan683" target="_blank">linkedin.com/in/sudarshan683</a></li>
         </ul>
     </section>
-</main>
+</div>
 
 <footer>
-    &copy; 2025 Sudarshan Sapkota | <a href="mailto:sudarshanofficial86@gmail.com">Email Me</a>
+    &copy; 2025 Sudarshan Sapkota. All Rights Reserved.
 </footer>
 
 </body>
