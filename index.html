@@ -2,75 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sudarshan Sapkota - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .flashing-text {
+      font-size: 2rem;
+      color: #64ffda;
+      animation: flash 2s infinite;
+    }
+
+    @keyframes flash {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <h1>Sudarshan</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#documents">Documents</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+  <nav>
+    <h1>Sudarshan</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="home">
-    <h2 id="typing-text"></h2>
-    <p>Welcome to my portfolio website. Explore my work and experiences!</p>
+  <section id="home" class="hero">
+    <img src="your-photo.jpg" alt="Sudarshan Sapkota" class="profile-img" />
+    <h2 class="flashing-text">Hi, I'm Sudarshan Sapkota</h2>
+    <p>I am a Computer Systems Technician passionate about IT, networking, and cybersecurity.</p>
   </section>
 
   <section id="profile">
-    <h2>My Profile</h2>
-    <div class="profile-content">
-      <img src="profile.jpg" alt="Sudarshan Sapkota" />
-      <p>I'm Sudarshan Sapkota, a Computer Systems Technician graduate from Seneca College. I have a passion for IT, cloud computing, and cybersecurity.</p>
-    </div>
+    <h2>About Me</h2>
+    <p>I graduated from Seneca College with a diploma in Computer Systems Technician. I'm always eager to learn and apply new technologies to solve real-world problems.</p>
+    <h3>Skills:</h3>
+    <ul>
+      <li>Network Administration</li>
+      <li>Cloud Computing (AWS, Azure)</li>
+      <li>Cybersecurity</li>
+      <li>System Administration</li>
+      <li>Linux & Windows Server</li>
+      <li>Python & Bash Scripting</li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project 1A</h3>
-      <p>Brief summary of Project 1A...</p>
-      <a href="project1a.pdf" target="_blank">View PDF</a>
+    <div class="card-grid">
+      <div class="card"><a href="project1a.pdf" target="_blank">Project 1A Documentation</a></div>
+      <div class="card"><a href="project1b.pdf" target="_blank">Project 1B Documentation</a></div>
+      <div class="card"><a href="project1c.pdf" target="_blank">Project 1C Documentation</a></div>
+      <div class="card"><a href="project2.pdf" target="_blank">Project 2 Documentation</a></div>
+      <div class="card"><a href="project3.pdf" target="_blank">Project 3 Documentation</a></div>
     </div>
-    <div class="project-card">
-      <h3>Project 1B</h3>
-      <p>Brief summary of Project 1B...</p>
-      <a href="project1b.pdf" target="_blank">View PDF</a>
-    </div>
-    <div class="project-card">
-      <h3>Project 1C</h3>
-      <p>Brief summary of Project 1C...</p>
-      <a href="project1c.pdf" target="_blank">View PDF</a>
-    </div>
-    <div class="project-card">
-      <h3>Project 2</h3>
-      <p>Brief summary of Project 2...</p>
-      <a href="project2.pdf" target="_blank">View PDF</a>
-    </div>
-    <div class="project-card">
-      <h3>Project 3</h3>
-      <p>Brief summary of Project 3...</p>
-      <a href="project3.pdf" target="_blank">View PDF</a>
-    </div>
-  </section>
-
-  <section id="documents">
-    <h2>Documents</h2>
-    <ul>
-      <li><a href="project1a.pdf" target="_blank">Project 1A Document</a></li>
-      <li><a href="project1b.pdf" target="_blank">Project 1B Document</a></li>
-      <li><a href="project1c.pdf" target="_blank">Project 1C Document</a></li>
-      <li><a href="project2.pdf" target="_blank">Project 2 Document</a></li>
-      <li><a href="project3.pdf" target="_blank">Project 3 Document</a></li>
-    </ul>
   </section>
 
   <section id="contact">
@@ -82,7 +71,5 @@
   <footer>
     <p>&copy; 2025 Sudarshan Sapkota</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
