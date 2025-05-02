@@ -1,4 +1,4 @@
-// script.js
-// Add future animations, nav behavior, scroll effects, etc.
-console.log("Portfolio loaded.");
-
+const toggleBtn = document.getElementById('toggle-theme');
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
