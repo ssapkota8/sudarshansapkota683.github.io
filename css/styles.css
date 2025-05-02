@@ -1,0 +1,132 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and base font */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #DC143C, #003893);
+    color: #333;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #DC143C, #003893);
+    color: #fff;
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #f0f0f0;
+}
+
+/* Profile image */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Main content container */
+main {
+    background: #fff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+section h2 {
+    color: #DC143C;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling within sections */
+section p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Skills list styling */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.skills-list li {
+    background: #003893;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Projects list and links */
+.project-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+}
+.project-list li {
+    margin-bottom: 8px;
+}
+.project-link {
+    text-decoration: none;
+    color: #003893;
+    background: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.project-link:hover {
+    background: #e0e0e0;
+}
+
+/* Footer styling */
+footer {
+    background: #003893;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header {
+        padding: 30px 10px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .tagline {
+        font-size: 1em;
+    }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    main {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
