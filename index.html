@@ -2,49 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sudarshan Sapkota - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudarshan Sapkota | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <div class="nav-container">
+    <nav>
       <h1>Sudarshan Sapkota</h1>
-      <button id="mode-toggle">Toggle Mode</button>
-    </div>
+      <button id="toggle-theme">Toggle Theme</button>
+    </nav>
   </header>
 
   <section class="intro">
-    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" />
-    <h2><span class="flashing">IT Professional | Based in Toronto, Canada</span></h2>
-    <p>
-      I'm a Computer Systems Technician graduate from Seneca College. I've worked on real-world
-      projects involving networking, cloud platforms, and cybersecurity.
-    </p>
+    <img src="assets/profile.jpg" alt="Profile Photo" />
+    <div class="intro-text">
+      <h2>Hello, I’m Sudarshan</h2>
+      <p>Computer Systems Technician based in Canada.<br>I’ve completed a diploma from Seneca College, focusing on cloud, networking, and cybersecurity.</p>
+    </div>
   </section>
 
   <section class="skills">
     <h2>Skills Gained</h2>
     <ul>
-      <li>Cloud Computing (Azure, AWS)</li>
-      <li>Networking, VPNs, File Shares</li>
-      <li>Cybersecurity & Forensics (Splunk, Wireshark, FTK Imager)</li>
-      <li>Linux & Bash Automation</li>
-      <li>Windows Server & Domain Controllers</li>
-      <li>SQL, PostgreSQL, Docker & Kubernetes</li>
+      <li>Cloud Platforms: Azure, AWS</li>
+      <li>Networking: Routing, Switching, VPNs</li>
+      <li>Security: Firewalls, Linux Hardening</li>
+      <li>Systems Admin: Windows Server, Linux</li>
+      <li>Scripting: Bash, Python</li>
+      <li>Tools: Docker, Git, Splunk</li>
     </ul>
   </section>
 
   <section class="projects">
     <h2>Projects</h2>
-    <div class="project-list">
-      <a href="documents/project1a.pdf" target="_blank">Project 1A</a>
-      <a href="documents/project1b.pdf" target="_blank">Project 1B</a>
-      <a href="documents/project1c.pdf" target="_blank">Project 1C</a>
-      <a href="documents/project2.pdf" target="_blank">Project 2</a>
-      <a href="documents/project3.pdf" target="_blank">Project 3</a>
-    </div>
+    <ul>
+      <li><a href="documents/project1a.pdf" target="_blank">Project 1A Documentation</a></li>
+      <li><a href="documents/project1b.pdf" target="_blank">Project 1B Documentation</a></li>
+      <li><a href="documents/project1c.pdf" target="_blank">Project 1C Documentation</a></li>
+      <li><a href="documents/project2.pdf" target="_blank">Project 2</a></li>
+      <li><a href="documents/project3.pdf" target="_blank">Project 3</a></li>
+    </ul>
   </section>
 
   <section class="contact">
@@ -56,5 +54,7 @@
   <footer>
     <p>&copy; 2025 Sudarshan Sapkota</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
