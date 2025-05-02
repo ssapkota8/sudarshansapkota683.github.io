@@ -1,75 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sudarshan Sapkota - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .flashing-text {
-      font-size: 2rem;
-      color: #64ffda;
-      animation: flash 2s infinite;
-    }
-
-    @keyframes flash {
-      0% { opacity: 1; }
-      50% { opacity: 0.4; }
-      100% { opacity: 1; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarshan Sapkota | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <nav>
-    <h1>Sudarshan</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#documents">Documents</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Header with profile image and name -->
+    <header>
+        <img src="assets/profile.jpg" alt="Sudarshan Sapkota" class="profile-pic">
+        <h1>Sudarshan Sapkota</h1>
+        <p class="tagline">Web Developer &amp; Designer from Nepal</p>
+    </header>
 
-  <section id="home" class="hero">
-    <img src="your-photo.jpg" alt="Sudarshan Sapkota" class="profile-img" />
-    <h2 class="flashing-text">Hi, I'm Sudarshan Sapkota</h2>
-    <p>I am a Computer Systems Technician passionate about IT, networking, and cybersecurity.</p>
-  </section>
+    <!-- Main content area -->
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Hello! I'm Sudarshan Sapkota, a passionate web developer from Nepal. I specialize in creating modern, responsive websites with a clean design. My goal is to build user-friendly applications that incorporate my Nepali heritage and love for technology.</p>
+        </section>
 
-  <section id="profile">
-    <h2>About Me</h2>
-    <p>I graduated from Seneca College with a diploma in Computer Systems Technician. I'm always eager to learn and apply new technologies to solve real-world problems.</p>
-    <h3>Skills:</h3>
-    <ul>
-      <li>Network Administration</li>
-      <li>Cloud Computing (AWS, Azure)</li>
-      <li>Cybersecurity</li>
-      <li>System Administration</li>
-      <li>Linux & Windows Server</li>
-      <li>Python & Bash Scripting</li>
-    </ul>
-  </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Python</li>
+            </ul>
+        </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card-grid">
-      <div class="card"><a href="project1a.pdf" target="_blank">Project 1A Documentation</a></div>
-      <div class="card"><a href="project1b.pdf" target="_blank">Project 1B Documentation</a></div>
-      <div class="card"><a href="project1c.pdf" target="_blank">Project 1C Documentation</a></div>
-      <div class="card"><a href="project2.pdf" target="_blank">Project 2 Documentation</a></div>
-      <div class="card"><a href="project3.pdf" target="_blank">Project 3 Documentation</a></div>
-    </div>
-  </section>
+        <!-- Projects Section (placeholders for future PDFs) -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>My project documents (resumes, portfolios, etc.) will appear here. Examples of downloadable PDFs:</p>
+            <ul class="project-list">
+                <li><a href="documents/project1.pdf" class="project-link">Project 1 (coming soon)</a></li>
+                <li><a href="documents/project2.pdf" class="project-link">Project 2 (coming soon)</a></li>
+            </ul>
+        </section>
+    </main>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sudarshanofficial86@gmail.com">sudarshanofficial86@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sudarshan683" target="_blank">linkedin.com/in/sudarshan683</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sudarshan Sapkota</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sudarshan Sapkota. All rights reserved.</p>
+    </footer>
 </body>
 </html>
