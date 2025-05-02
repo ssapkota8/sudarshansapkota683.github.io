@@ -13,20 +13,57 @@
         <a href="index.html">Home</a>
         <a href="profile.html">Profile</a>
         <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
 <div class="container">
-    <h2>Projects</h2>
+    <h2>My Projects</h2>
+
     <div class="card">
-        <h3>MST400 Azure Project</h3>
-        <p>Created a full infrastructure with domain controller, VMs, peered networks using Azure Bastion.</p>
+        <h3>CSP450: Transactional Machine Learning (TML) Real-Time Dashboard</h3>
+        <p>
+            Developed a real-time data processing system using <strong>Docker, Kubernetes, MariaDB, Python, and Kafka</strong>. Modified and deployed the 
+            TML container to a cluster and configured a dynamic dashboard that visualized real-time transaction activity and preprocessing types. 
+            Demonstrated container orchestration and backend scalability in a production-like environment.
+        </p>
     </div>
+
     <div class="card">
-        <h3>SEC320 Splunk Lab</h3>
-        <p>Configured Splunk, investigated brute force attacks using logs and Phantom.</p>
+        <h3>MST400 Project 1: Azure VPN and Backup Infrastructure</h3>
+        <p>
+            Designed and implemented a secure Azure-based infrastructure with:
+            <ul>
+                <li>Point-to-Site (P2S) VPN tunnel for secure remote access</li>
+                <li>Cross-region file sharing and drive mapping between virtual networks</li>
+                <li>Automated backup schedules: weekly (3-week retention) and monthly (10-month retention)</li>
+                <li>Manual backup and restoration process demonstration</li>
+            </ul>
+            This solution demonstrated practical cloud security, file resiliency, and disaster recovery planning.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>MST400 Project 2: Secure File Sharing Solution</h3>
+        <p>
+            Built a cloud environment in Azure with:
+            <ul>
+                <li>Two resource groups in different regions (US East and US West)</li>
+                <li>Predefined static IPs for all components</li>
+                <li>Peered VNets and Azure Bastion for remote management</li>
+                <li>Secure file share access with proper user rights and ACLs</li>
+            </ul>
+            Ensured secure, scalable, and efficient file access across regions in a corporate-like environment.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>SEC320: Splunk and Phantom Threat Investigation</h3>
+        <p>
+            Deployed and configured <strong>Splunk</strong> on CentOS and used <strong>Phantom</strong> to automate response to detected threats.
+            Investigated simulated brute-force attacks, analyzed NTUSER.DAT files and logs, and used <strong>FTK Imager</strong> and <strong>Wireshark</strong> 
+            for deeper forensic analysis. Created basic playbooks and visualized log anomalies in Splunk.
+        </p>
     </div>
 </div>
 
@@ -36,4 +73,3 @@
 
 </body>
 </html>
- 
