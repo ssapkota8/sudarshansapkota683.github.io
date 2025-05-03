@@ -1,150 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudarshan Sapkota - Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudarshan Sapkota - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
-        header {
-            background-color: #0A192F;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
+    header {
+      background-color: #0A192F;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
 
-        nav {
-            background-color: #0A192F;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
+    nav {
+      background-color: #0A192F;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
 
-        nav a {
-            color: #64FFDA;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+    nav a {
+      color: #64FFDA;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        section.hero {
-            background: linear-gradient(to right, #0A192F, #1C2C40);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-            animation: fadeIn 1.2s ease-in-out;
-        }
+    section.hero {
+      background: linear-gradient(to right, #0A192F, #1C2C40);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-        .hero img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 3px solid #64FFDA;
-            margin-bottom: 20px;
-        }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #64FFDA;
+      margin-bottom: 20px;
+    }
 
-        .hero h1 {
-            font-size: 2.2em;
-        }
+    .hero h1 {
+      font-size: 2.2em;
+    }
 
-        .hero p {
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
+    .hero p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
 
-        .btn {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #64FFDA;
-            color: #0A192F;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #64FFDA;
+      color: #0A192F;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
 
-        .btn:hover {
-            background-color: #52d1b5;
-        }
+    .btn:hover {
+      background-color: #52d1b5;
+    }
 
-        footer {
-            background-color: #0A192F;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 60px;
-        }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+    h2 {
+      text-align: center;
+      color: #0A192F;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .highlight {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 5px solid #64FFDA;
+      padding-left: 15px;
+      margin: 40px 0;
+    }
+
+    footer {
+      background-color: #0A192F;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Portfolio</h1>
+  <h1>Welcome to My Portfolio</h1>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="profile.html">Profile</a>
+  <a href="projects.html">Projects</a>
+
+  <a href="contact.html">Contact</a>
 </nav>
 
-<section class="hero">
-    <img src="assets/profile.jpg" alt="Sudarshan Sapkota">
-    <h1>Hello, I'm <span id="typed-text"></span></h1>
-    <p>I’m passionate about networks, cloud computing, and cybersecurity.</p>
-    <a class="btn" href="projects.html">See My Work</a>
+<section class="hero" data-aos="zoom-in">
+  <img src="assets/profile.jpg" alt="Sudarshan Sapkota">
+  <h1>Hello, I'm <span id="typed-text"></span></h1>
+  <p>I’m passionate about networks, cloud computing, and cybersecurity.</p>
+  <a class="btn" href="projects.html">See My Work</a>
+</section>
+
+<section data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="highlight">Linux & Bash</div>
+    <div class="highlight">Cloud (Azure, AWS)</div>
+    <div class="highlight">Network Security</div>
+    <div class="highlight">Python</div>
+    <div class="highlight">Docker & Kubernetes</div>
+    <div class="highlight">SQL & Databases</div>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>Quote I Live By</h2>
+  <blockquote>
+    "Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill
+  </blockquote>
+</section>
+
+<section data-aos="fade-up">
+  <h2>Highlights</h2>
+  <div class="skills-grid">
+    <div class="highlight">✔ 3+ Years Experience in IT</div>
+    <div class="highlight">✔ Graduate of Computer Systems Technician from Seneca</div>
+    <div class="highlight">✔ Azure, AWS, Splunk, docker, Python, VMware, Virtual Box Projects Completed</div>
+
+  </div>
 </section>
 
 <footer>
-    &copy; 2025 Sudarshan Sapkota
+  &copy; 2025 Sudarshan Sapkota
 </footer>
 
 <script>
-    const words = ["Sudarshan Sapkota", "a Computer Technician", "a Cloud Enthusiast", "a Future SysAdmin"];
-    let i = 0, j = 0, isDeleting = false;
+  const words = ["Sudarshan Sapkota", "a Computer Technician", "a Cloud Enthusiast", "a Future SysAdmin"];
+  let i = 0, j = 0, isDeleting = false;
 
-    function type() {
-        const typedText = document.getElementById("typed-text");
-        const current = words[i];
-        
-        if (isDeleting) {
-            typedText.textContent = current.substring(0, j--);
-            if (j < 0) {
-                isDeleting = false;
-                i = (i + 1) % words.length;
-            }
-        } else {
-            typedText.textContent = current.substring(0, j++);
-            if (j > current.length) {
-                isDeleting = true;
-            }
-        }
+  function type() {
+    const typedText = document.getElementById("typed-text");
+    const current = words[i];
 
-        const speed = isDeleting ? 50 : 100;
-        setTimeout(type, speed);
+    if (isDeleting) {
+      typedText.textContent = current.substring(0, j--);
+      if (j < 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
+    } else {
+      typedText.textContent = current.substring(0, j++);
+      if (j > current.length) {
+        isDeleting = true;
+      }
     }
 
-    type();
+    const speed = isDeleting ? 50 : 100;
+    setTimeout(type, speed);
+  }
+
+  type();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </body>
 </html>
-
